@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid rgb(179, 179, 243);
+    border-radius: 5px;
+}
+.cross {
+    border: 1px solid rgb(27, 200, 183);
+    padding: 0px 6px;
+    cursor: pointer;
+}
+.cross:hover{
+    border: 1px solid rgb(242, 86, 42);
+    background-color: rgb(165, 33, 3);
+    color: white;
+}
+
+p {
+    color: red;
+    font-size: 25px;
+}

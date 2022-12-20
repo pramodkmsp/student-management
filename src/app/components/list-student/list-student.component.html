@@ -1,0 +1,32 @@
+<div *ngIf="display" class="alert alert-success col-md-6 mt-3 p-3 mx-auto" role="alert">
+    {{message}}
+</div>
+
+<div class="container mt-3 p-0 mx-auto">
+    <input type="text" [(ngModel)]="searchInput" (keyup)="searchStudentRecords(searchInput)" class="form-control" placeholder="Type here to search the student records...">
+</div>
+
+<table class="table mt-2 container">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Year Of Joining</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let students of filteredStudents; let i = index;">
+            <td>{{i + 1}}</td>
+            <td>{{students.name}}</td>
+            <td>{{students.email}}</td>
+            <td>{{students.yearOfJoining}}</td>
+            <td>
+                <button class="btn btn-info btn-sm mx-2" routerLink="/edit-student/{{students.id}}">Edit</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteStudentByID(students.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h4 *ngIf="filteredStudents.length == 0" class="text-center mx-auto p-0 m-0 text-primary" >No data available !</h4>

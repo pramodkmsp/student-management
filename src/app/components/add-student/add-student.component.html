@@ -1,0 +1,25 @@
+<div *ngIf="display" class="alert alert-success col-md-6 mt-3 p-3 mx-auto" role="alert">
+   {{message}} <span class="cross float-end" (click)="hideDiv()"> X </span>
+</div>
+<div class="container col-md-6 mt-3 p-3">
+    <p>Add Student</p>
+    <hr>
+    <form [formGroup]="studentForm" (ngSubmit)="addStudent()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" autocomplete="off" formControlName="name" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" autocomplete="off" formControlName="email" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="yearOfJoining"class="form-label">Year Of Joining <span class="text-danger">*</span></label>
+            <select class="form-select" formControlName="yearOfJoining">
+                <option>Select the year</option>
+                <option *ngFor="let year of years" [value]="year">{{year}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

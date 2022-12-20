@@ -1,0 +1,46 @@
+{
+  "students": [
+    {
+      "name": "Pramoda K Manjegowda",
+      "email": "pramoda.k.manjegowda@accenture.com",
+      "yearOfJoining": "2021",
+      "id": 1
+    },
+    {
+      "name": "Ganesh MK",
+      "email": "ganesh@subex.com",
+      "yearOfJoining": "2020",
+      "id": 2
+    },
+    {
+      "name": "Prajwal",
+      "email": "prajwal@gmail.com",
+      "yearOfJoining": "2014",
+      "id": 3
+    },
+    {
+      "name": "Nithin",
+      "email": "nithin@microsoft.com",
+      "yearOfJoining": "2021",
+      "id": 4
+    },
+    {
+      "name": "Nithyashree",
+      "email": "nithyashree@gmail.com",
+      "yearOfJoining": "2022",
+      "id": 5
+    },
+    {
+      "name": "Supreeth G A",
+      "email": "supreethga@gmail.com",
+      "yearOfJoining": "2010",
+      "id": 6
+    },
+    {
+      "name": "Supreeth",
+      "email": "supreth@gmail.com",
+      "yearOfJoining": "2011",
+      "id": 7
+    }
+  ]
+}
